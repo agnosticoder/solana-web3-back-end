@@ -1,0 +1,16 @@
+[features]
+seeds = false
+# [programs.localnet]
+[programs.devnet]
+learn_solana_anchor = "23VKzPHLb4AisXqdRocpcwAGEGq1o9qS3um12dgKWRiw"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/sani/.config/solana/id.json"
+
+[scripts]
+# test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test = "ts-node tests/learn-solana-anchor.ts"
